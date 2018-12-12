@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:title="更多"
+        android:icon="@mipmap/more_icon"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/edit"
+                app:showAsAction="never"
+                android:icon="@mipmap/edit_icon"
+                android:title="编辑"
+                />
+
+            <item
+                android:id="@+id/details"
+                app:showAsAction="never"
+                android:icon="@mipmap/details_icon"
+                android:title="详情"
+                />
+
+            <item
+                android:id="@+id/share"
+                app:showAsAction="never"
+                android:icon="@mipmap/share_icon"
+                android:title="分享"
+                />
+
+            <item
+                android:id="@+id/delete"
+                app:showAsAction="never"
+                android:icon="@mipmap/delete_icon"
+                android:title="删除"
+                />
+
+        </menu>
+
+    </item>
+
+
+</menu>

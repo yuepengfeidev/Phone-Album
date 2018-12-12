@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PhotoViewActivity"
+    android:orientation="vertical"
+    android:background="#f2f0f0">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_photo_view"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/Theme.ToolBar.Menu"
+        android:background="#cceed0">
+
+        <ImageButton
+            android:id="@+id/ib_back"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:src="@mipmap/back_icon"
+            android:background="#00000000"
+            />
+
+        <TextView
+            android:id="@+id/count_title"
+            style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#ffffff" />
+
+    </android.support.v7.widget.Toolbar>
+    
+    <com.example.a79875.phonealbum.widget.MyViewPager
+        android:id="@+id/vp_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <uk.co.senab.photoview.PhotoView
+            android:id="@+id/pv_photo_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </com.example.a79875.phonealbum.widget.MyViewPager>
+
+</LinearLayout>

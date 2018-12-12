@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/iv_latest2_photo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/tv_folder2_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文件夹名"
+        android:textSize="20dp"
+        android:textColor="#353333"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_count2_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="32"
+        android:textSize="17sp"
+        android:textColor="#aba7a7"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/tv_folder2_name"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/right_icon"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1sp"
+        android:background="#d7d6d6"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
